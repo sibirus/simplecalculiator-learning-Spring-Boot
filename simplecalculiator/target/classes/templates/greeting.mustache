@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<div>
+    Simple calculiator
+
+        &nbsp
+
+
+
+    <form method="post" action ="calc">
+        <input type="number" name="NumberOne" placeholder="Введите число"/>
+        <input type="number" name="NumberTwo" placeholder="Введите число"/>
+        <input type="text" name="Operation" placeholder="Введите */+-"/>
+        <button type ="submit">Calculation</button>
+
+
+    </form>
+
+</div>
+
+<div>
+    Calculation=
+    {{#exit}}
+        {{.}}
+
+        {{/exit}}
+</div>
+
+
+
+
+</body>
+
+</html>
