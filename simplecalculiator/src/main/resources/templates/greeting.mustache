@@ -3,33 +3,64 @@
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
 </head>
 <body>
 
-<div>
-    Simple calculiator
 
-        &nbsp
+
+<div>
+    <h4>
+    <p class="text-primary">Simple calculiator</p>
+    </h4>
+
+</div>
+
 
 
 
     <form method="post" action ="calc">
-        <input type="number" name="NumberOne" placeholder="Введите число"/>
-        <input type="number" name="NumberTwo" placeholder="Введите число"/>
-        <input type="text" name="Operation" placeholder="Введите */+-"/>
-        <button type ="submit">Calculation</button>
+
+        <div class="form-row">
+            <div class="col-auto">
+                <input type="number" step="0.001" name="NumberOne" class="form-control" placeholder="Введите число"/>
+            </div>
+            <div class="col-auto">
+                <input type="number" step="0.001" name="NumberTwo" class="form-control" placeholder="Введите число"/>
+
+            </div>
+            <div class="col-auto">
+                <input type="text" name="Operation" class="form-control" placeholder="Введите */+-"/>
+
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Calculation</button>
+        </div>
+
+
+
+
+            <!--<input type="number" step="0.001" name="NumberOne" placeholder="Введите число"/>
+            <input type="number" step="0.001" name="NumberTwo" placeholder="Введите число"/>-
+            <input type="text" name="Operation" placeholder="Введите */+-"/>
+            <button type="submit" class="btn btn-outline-primary">Calculation</button>
+            <button type ="submit">Calculation</button><<< до использования BootStrap-->
 
 
     </form>
 
-</div>
+
 
 <div>
-    Calculation=
-    {{#exit}}
-        {{.}}
+    <div class="d-inline p-2 bg-primary text-white">Calculation=
+        {{#exit}}
+            {{.}}
 
-        {{/exit}}
+        {{/exit}}</div>
+
 </div>
 
 
